@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 import generic.BasePage;
 
@@ -16,6 +17,9 @@ public class LoginPage extends BasePage{
 	
 	@FindBy(xpath="//div[.='Login ']")
 	private WebElement loginBTN;
+	
+	@FindBy(className="errormsg")
+	private WebElement errorMSG;
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -35,6 +39,13 @@ public class LoginPage extends BasePage{
 	public void clickLoginBTN()
 	{
 		loginBTN.click();
+	}
+	
+	public void verifyErrorMSG(WebDriver driver,String msgText)
+	{
+		waitForElement(driver, errorMSG);
+		verifyText(errorMSG, msgText);
+		Reporter.log("Error msg "+msgText+" is Displayed",true);
 	}
 
 }

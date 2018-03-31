@@ -22,11 +22,26 @@ public class BasePage {
 			Assert.fail();
 		}
 	}
-	
+
 	public void verifyText(WebElement element, String eText)
 	{
 		String aText=element.getText();
 		Assert.assertEquals(aText, eText);
+	}
+
+	public void waitForElement(WebDriver driver,WebElement element)
+	{
+		long ETO=Long.parseLong(AutoUtil.getProperty(IAutoConst.CONFIG_PATH, "ETO"));
+		WebDriverWait wait=new WebDriverWait(driver, ETO);
+		while(true)
+		{
+			try {
+				wait.until(ExpectedConditions.visibilityOf(element));
+				break;
+			}catch (Exception e) {
+			
+			}
+		}
 	}
 
 }
