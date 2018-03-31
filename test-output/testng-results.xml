@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[Expected Page actiTIME - Login is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Expected Page actiTIME - Login is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Error msg Username or Password is invalid. Please try again. is Displayed]]>
+    </line>
     <line>
       <![CDATA[Expected Page actiTIME - Login is Displayed]]>
     </line>
@@ -11,16 +23,57 @@
       <![CDATA[Pass : Expected Version actiTIME 2017.4 is Displayed]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17320" started-at="2018-03-31T16:14:54Z" finished-at="2018-03-31T16:15:11Z">
+  <suite name="Suite" duration-ms="39475" started-at="2018-03-31T16:29:09Z" finished-at="2018-03-31T16:29:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17320" started-at="2018-03-31T16:14:54Z" finished-at="2018-03-31T16:15:11Z">
-      <class name="script.CheckVersion">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.CheckVersion@5e3a8624]" name="openApplication" is-config="true" duration-ms="8390" started-at="2018-03-31T16:14:54Z" finished-at="2018-03-31T16:15:02Z">
+    <test name="TestChrome" duration-ms="39475" started-at="2018-03-31T16:29:09Z" finished-at="2018-03-31T16:29:48Z">
+      <class name="script.InvalidLogin">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.InvalidLogin@343f4d3d]" name="openApplication" is-config="true" duration-ms="7396" started-at="2018-03-31T16:29:25Z" finished-at="2018-03-31T16:29:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testCheckVersion()[pri:0, instance:script.CheckVersion@5e3a8624]" name="testCheckVersion" duration-ms="6575" started-at="2018-03-31T16:15:02Z" finished-at="2018-03-31T16:15:09Z">
+        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@343f4d3d]" name="testInvalidLogin" duration-ms="1309" started-at="2018-03-31T16:29:32Z" finished-at="2018-03-31T16:29:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected Page actiTIME - Login is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Error msg Username or Password is invalid. Please try again. is Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@343f4d3d]" name="closeApplication" is-config="true" duration-ms="2514" started-at="2018-03-31T16:29:33Z" finished-at="2018-03-31T16:29:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@343f4d3d] output=Expected Page actiTIME - Login is Displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.InvalidLogin -->
+      <class name="script.CheckVersion">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.CheckVersion@57baeedf]" name="openApplication" is-config="true" duration-ms="7002" started-at="2018-03-31T16:29:36Z" finished-at="2018-03-31T16:29:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testCheckVersion()[pri:3, instance:script.CheckVersion@57baeedf]" name="testCheckVersion" duration-ms="4871" started-at="2018-03-31T16:29:43Z" finished-at="2018-03-31T16:29:48Z">
           <reporter-output>
             <line>
               <![CDATA[Expected Page actiTIME - Login is Displayed]]>
@@ -33,11 +86,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCheckVersion -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckVersion@5e3a8624]" name="closeApplication" is-config="true" duration-ms="2320" started-at="2018-03-31T16:15:09Z" finished-at="2018-03-31T16:15:11Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckVersion@57baeedf]" name="closeApplication" is-config="true" duration-ms="424" started-at="2018-03-31T16:29:48Z" finished-at="2018-03-31T16:29:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheckVersion status=SUCCESS method=CheckVersion.testCheckVersion()[pri:0, instance:script.CheckVersion@5e3a8624] output=Expected Page actiTIME - Login is Displayed]]]>
+                <![CDATA[[TestResult name=testCheckVersion status=SUCCESS method=CheckVersion.testCheckVersion()[pri:3, instance:script.CheckVersion@57baeedf] output=Expected Page actiTIME - Login is Displayed]]]>
               </value>
             </param>
           </params>
@@ -45,6 +98,40 @@
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- script.CheckVersion -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="script.ValidLogin">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.ValidLogin@53b32d7]" name="openApplication" is-config="true" duration-ms="10883" started-at="2018-03-31T16:29:09Z" finished-at="2018-03-31T16:29:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@53b32d7]" name="testValidLogin" duration-ms="4569" started-at="2018-03-31T16:29:20Z" finished-at="2018-03-31T16:29:24Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected Page actiTIME - Login is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@53b32d7]" name="closeApplication" is-config="true" duration-ms="458" started-at="2018-03-31T16:29:24Z" finished-at="2018-03-31T16:29:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@53b32d7] output=Expected Page actiTIME - Login is Displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.ValidLogin -->
+    </test> <!-- TestChrome -->
+  </suite> <!-- Suite -->
 </testng-results>

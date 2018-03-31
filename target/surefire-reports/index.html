@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -116,22 +116,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.CheckVersion" hash-for-method="testCheckVersion">testCheckVersion</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.InvalidLogin" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.InvalidLogin" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.ValidLogin" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -165,14 +150,13 @@
                   <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;div class=&quot;popup_menu_label&quot;&gt; is not clickable at point (1259.5,70.10000610351562) because another element &lt;div id=&quot;preInsertedTransformedMoireId&quot; class=&quot;transformedMoireClass&quot;&gt; obscures it
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;DESKTOP-2IEME8E&apos;, ip: &apos;10.0.0.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6536, moz:profile: C:\Users\Wooplr\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12852, moz:profile: C:\Users\Wooplr\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: c10faaf4-dda1-431c-b5a9-308...}
+Session ID: c10faaf4-dda1-431c-b5a9-308aa3397a58
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
@@ -180,11 +164,10 @@ Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
 	at page.ETTPage.clickHelpBTN(ETTPage.java:28)
 	at script.CheckVersion.testCheckVersion(CheckVersion.java:28)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 24 stack frames
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -196,13 +179,6 @@ Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85
               <span class="class-name">script.ValidLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testValidLogin">
-                  </a> <!-- testValidLogin -->
-                  <span class="method-name">testValidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testValidLogin">
@@ -225,28 +201,6 @@ Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85
                   <span class="method-name">testInvalidLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testInvalidLogin">
-                  </a> <!-- testInvalidLogin -->
-                  <span class="method-name">testInvalidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">script.CheckVersion</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCheckVersion">
-                  </a> <!-- testCheckVersion -->
-                  <span class="method-name">testCheckVersion</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -258,20 +212,10 @@ Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestChrome&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;packages&gt;
-      &lt;package name=&quot;script&quot;/&gt;
-    &lt;/packages&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;script.CheckVersion&quot;/&gt;
-      &lt;class name=&quot;script.InvalidLogin&quot;/&gt;
-      &lt;class name=&quot;script.ValidLogin&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestChrome --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestFirefox&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;TestFirefox&quot; parallel=&quot;classes&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;ip&quot; value=&quot;10.0.0.2&quot;/&gt;
     &lt;packages&gt;
       &lt;package name=&quot;script&quot;/&gt;
     &lt;/packages&gt;
@@ -291,9 +235,6 @@ Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
-              <li>
-                <span class="test-name">TestChrome (3 classes)</span>
-              </li>
               <li>
                 <span class="test-name">TestFirefox (3 classes)</span>
               </li>
@@ -321,36 +262,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testInvalidLogin')
-data.setCell(0, 2, 'script.InvalidLogin')
-data.setCell(0, 3, 7926);
+data.setCell(0, 1, 'testValidLogin')
+data.setCell(0, 2, 'script.ValidLogin')
+data.setCell(0, 3, 8848);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testValidLogin')
-data.setCell(1, 2, 'script.ValidLogin')
-data.setCell(1, 3, 7482);
+data.setCell(1, 1, 'testCheckVersion')
+data.setCell(1, 2, 'script.CheckVersion')
+data.setCell(1, 3, 3912);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testCheckVersion')
-data.setCell(2, 2, 'script.CheckVersion')
-data.setCell(2, 3, 6895);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testValidLogin')
-data.setCell(3, 2, 'script.ValidLogin')
-data.setCell(3, 3, 4729);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCheckVersion')
-data.setCell(4, 2, 'script.CheckVersion')
-data.setCell(4, 3, 3289);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testInvalidLogin')
-data.setCell(5, 2, 'script.InvalidLogin')
-data.setCell(5, 3, 2829);
+data.setCell(2, 1, 'testInvalidLogin')
+data.setCell(2, 2, 'script.InvalidLogin')
+data.setCell(2, 3, 2855);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -361,28 +290,6 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testValidLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Expected Page actiTIME - Login is Displayed</span>
-                <span class="reporter-method-output">Expected Page actiTIME - Enter Time-Track is Displayed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testInvalidLogin</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Expected Page actiTIME - Login is Displayed</span>
-                <span class="reporter-method-output">Error msg Username or Password is invalid. Please try again. is Displayed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testCheckVersion</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Expected Page actiTIME - Login is Displayed</span>
-                <span class="reporter-method-output">Expected Page actiTIME - Enter Time-Track is Displayed</span>
-                <span class="reporter-method-output">Pass : Expected Version actiTIME 2017.4 is Displayed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">testValidLogin</span>
               <div class="reporter-method-output-div">
@@ -421,93 +328,48 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">script.ValidLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openApplication(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication(firefox)</span>
+                <span class="method-name">openApplication(firefox, 10.0.0.2)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">16996 ms</span>
+                <span class="method-start">17612 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication([TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:sc...)</span>
-                <span class="method-start">24480 ms</span>
+                <span class="method-start">26461 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">script.InvalidLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openApplication(chrome)</span>
-                <span class="method-start">25442 ms</span>
+                <span class="method-name">openApplication(firefox, 10.0.0.2)</span>
+                <span class="method-start">28062 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testInvalidLogin</span>
-                <span class="method-start">43317 ms</span>
+                <span class="method-start">39324 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication([TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, insta...)</span>
-                <span class="method-start">46146 ms</span>
+                <span class="method-start">42180 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">script.CheckVersion</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openApplication(chrome)</span>
-                <span class="method-start">50018 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testCheckVersion</span>
-                <span class="method-start">65375 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testCheckVersion status=SUCCESS method=CheckVersion.testCheckVersion()[pri:3, insta...)</span>
-                <span class="method-start">72270 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.ValidLogin</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">95459 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:sc...)</span>
-                <span class="method-start">100188 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.InvalidLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication(firefox)</span>
-                <span class="method-start">104357 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testInvalidLogin</span>
-                <span class="method-start">115966 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication([TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, insta...)</span>
-                <span class="method-start">123892 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">script.CheckVersion</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApplication(firefox)</span>
-                <span class="method-start">126472 ms</span>
+                <span class="method-name">openApplication(firefox, 10.0.0.2)</span>
+                <span class="method-start">43029 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCheckVersion</span>
-                <span class="method-start">138834 ms</span>
+                <span class="method-start">55810 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication([TestResult name=testCheckVersion status=FAILURE method=CheckVersion.testCheckVersion()[pri:3, insta...)</span>
-                <span class="method-start">142209 ms</span>
+                <span class="method-start">59733 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

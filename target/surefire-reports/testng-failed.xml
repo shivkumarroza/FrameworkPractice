@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" verbose="0" name="TestFirefox(failed)" parallel="tests">
+<suite verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" verbose="0" name="TestFirefox(failed)" parallel="classes">
     <parameter name="browser" value="firefox"/>
+    <parameter name="ip" value="10.0.0.2"/>
     <classes>
       <class name="script.CheckVersion">
         <methods>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
     <line>
       <![CDATA[Expected Page actiTIME - Login is Displayed]]>
@@ -19,45 +19,29 @@
     <line>
       <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
     </line>
-    <line>
-      <![CDATA[Pass : Expected Version actiTIME 2017.4 is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Expected Page actiTIME - Login is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Expected Page actiTIME - Login is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Error msg Username or Password is invalid. Please try again. is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Expected Page actiTIME - Login is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="146938" started-at="2018-03-31T16:23:01Z" finished-at="2018-03-31T16:25:28Z">
+  <suite name="Suite" duration-ms="61037" started-at="2018-03-31T17:25:36Z" finished-at="2018-03-31T17:26:37Z">
     <groups>
     </groups>
-    <test name="TestChrome" duration-ms="76348" started-at="2018-03-31T16:23:01Z" finished-at="2018-03-31T16:24:17Z">
+    <test name="TestFirefox" duration-ms="61037" started-at="2018-03-31T17:25:36Z" finished-at="2018-03-31T17:26:37Z">
       <class name="script.InvalidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.InvalidLogin@1324409e]" name="openApplication" is-config="true" duration-ms="17875" started-at="2018-03-31T16:23:26Z" finished-at="2018-03-31T16:23:44Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.InvalidLogin@246ae04d]" name="openApplication" is-config="true" duration-ms="11262" started-at="2018-03-31T17:26:04Z" finished-at="2018-03-31T17:26:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0.0.2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@1324409e]" name="testInvalidLogin" duration-ms="2829" started-at="2018-03-31T16:23:44Z" finished-at="2018-03-31T16:23:47Z">
+        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@246ae04d]" name="testInvalidLogin" duration-ms="2855" started-at="2018-03-31T17:26:15Z" finished-at="2018-03-31T17:26:18Z">
           <reporter-output>
             <line>
               <![CDATA[Expected Page actiTIME - Login is Displayed]]>
@@ -67,11 +51,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@1324409e]" name="closeApplication" is-config="true" duration-ms="3870" started-at="2018-03-31T16:23:47Z" finished-at="2018-03-31T16:23:51Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@246ae04d]" name="closeApplication" is-config="true" duration-ms="847" started-at="2018-03-31T17:26:18Z" finished-at="2018-03-31T17:26:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@1324409e] output=Expected Page actiTIME - Login is Displayed]]]>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@246ae04d] output=Expected Page actiTIME - Login is Displayed]]]>
               </value>
             </param>
           </params>
@@ -80,141 +64,39 @@
         </test-method> <!-- closeApplication -->
       </class> <!-- script.InvalidLogin -->
       <class name="script.CheckVersion">
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.CheckVersion@180bc464]" name="openApplication" is-config="true" duration-ms="15357" started-at="2018-03-31T16:23:51Z" finished-at="2018-03-31T16:24:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testCheckVersion()[pri:3, instance:script.CheckVersion@180bc464]" name="testCheckVersion" duration-ms="6895" started-at="2018-03-31T16:24:06Z" finished-at="2018-03-31T16:24:13Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Expected Page actiTIME - Login is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Pass : Expected Version actiTIME 2017.4 is Displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCheckVersion -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckVersion@180bc464]" name="closeApplication" is-config="true" duration-ms="4051" started-at="2018-03-31T16:24:13Z" finished-at="2018-03-31T16:24:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testCheckVersion status=SUCCESS method=CheckVersion.testCheckVersion()[pri:3, instance:script.CheckVersion@180bc464] output=Expected Page actiTIME - Login is Displayed]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.CheckVersion -->
-      <class name="script.ValidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.ValidLogin@2c6a3f77]" name="openApplication" is-config="true" duration-ms="16996" started-at="2018-03-31T16:23:01Z" finished-at="2018-03-31T16:23:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@2c6a3f77]" name="testValidLogin" duration-ms="7482" started-at="2018-03-31T16:23:18Z" finished-at="2018-03-31T16:23:25Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Expected Page actiTIME - Login is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@2c6a3f77]" name="closeApplication" is-config="true" duration-ms="959" started-at="2018-03-31T16:23:25Z" finished-at="2018-03-31T16:23:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@2c6a3f77] output=Expected Page actiTIME - Login is Displayed]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.ValidLogin -->
-    </test> <!-- TestChrome -->
-    <test name="TestFirefox" duration-ms="146938" started-at="2018-03-31T16:23:01Z" finished-at="2018-03-31T16:25:28Z">
-      <class name="script.InvalidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.InvalidLogin@7225790e]" name="openApplication" is-config="true" duration-ms="11609" started-at="2018-03-31T16:24:45Z" finished-at="2018-03-31T16:24:57Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.CheckVersion@2c6a3f77]" name="openApplication" is-config="true" duration-ms="12781" started-at="2018-03-31T17:26:19Z" finished-at="2018-03-31T17:26:31Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[firefox]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@7225790e]" name="testInvalidLogin" duration-ms="7926" started-at="2018-03-31T16:24:57Z" finished-at="2018-03-31T16:25:05Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Expected Page actiTIME - Login is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[Error msg Username or Password is invalid. Please try again. is Displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@7225790e]" name="closeApplication" is-config="true" duration-ms="2579" started-at="2018-03-31T16:25:05Z" finished-at="2018-03-31T16:25:07Z">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@7225790e] output=Expected Page actiTIME - Login is Displayed]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.InvalidLogin -->
-      <class name="script.CheckVersion">
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.CheckVersion@35fb3008]" name="openApplication" is-config="true" duration-ms="12361" started-at="2018-03-31T16:25:07Z" finished-at="2018-03-31T16:25:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
+                <![CDATA[10.0.0.2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testCheckVersion()[pri:3, instance:script.CheckVersion@35fb3008]" name="testCheckVersion" duration-ms="3289" started-at="2018-03-31T16:25:20Z" finished-at="2018-03-31T16:25:23Z">
+        <test-method status="FAIL" signature="testCheckVersion()[pri:3, instance:script.CheckVersion@2c6a3f77]" name="testCheckVersion" duration-ms="3912" started-at="2018-03-31T17:26:31Z" finished-at="2018-03-31T17:26:35Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[Element <div class="popup_menu_label"> is not clickable at point (1259.5,70.10000610351562) because another element <div id="preInsertedTransformedMoireId" class="transformedMoireClass"> obscures it
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-2IEME8E', ip: '10.0.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6536, moz:profile: C:\Users\Wooplr\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85]]>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12852, moz:profile: C:\Users\Wooplr\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: c10faaf4-dda1-431c-b5a9-308...}
+Session ID: c10faaf4-dda1-431c-b5a9-308aa3397a58]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <div class="popup_menu_label"> is not clickable at point (1259.5,70.10000610351562) because another element <div id="preInsertedTransformedMoireId" class="transformedMoireClass"> obscures it
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-2IEME8E', ip: '10.0.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6536, moz:profile: C:\Users\Wooplr\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12852, moz:profile: C:\Users\Wooplr\AppData\Loc..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: c10faaf4-dda1-431c-b5a9-308...}
+Session ID: c10faaf4-dda1-431c-b5a9-308aa3397a58
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -223,7 +105,6 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpR
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
@@ -245,13 +126,6 @@ at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
@@ -267,11 +141,11 @@ at java.lang.Thread.run(Unknown Source)
             </line>
           </reporter-output>
         </test-method> <!-- testCheckVersion -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckVersion@35fb3008]" name="closeApplication" is-config="true" duration-ms="4702" started-at="2018-03-31T16:25:23Z" finished-at="2018-03-31T16:25:28Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckVersion@2c6a3f77]" name="closeApplication" is-config="true" duration-ms="1274" started-at="2018-03-31T17:26:35Z" finished-at="2018-03-31T17:26:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheckVersion status=FAILURE method=CheckVersion.testCheckVersion()[pri:3, instance:script.CheckVersion@35fb3008] output=Expected Page actiTIME - Login is Displayed]]]>
+                <![CDATA[[TestResult name=testCheckVersion status=FAILURE method=CheckVersion.testCheckVersion()[pri:3, instance:script.CheckVersion@2c6a3f77] output=Expected Page actiTIME - Login is Displayed]]]>
               </value>
             </param>
           </params>
@@ -280,18 +154,23 @@ at java.lang.Thread.run(Unknown Source)
         </test-method> <!-- closeApplication -->
       </class> <!-- script.CheckVersion -->
       <class name="script.ValidLogin">
-        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:script.ValidLogin@54a097cc]" name="openApplication" is-config="true" duration-ms="95459" started-at="2018-03-31T16:23:01Z" finished-at="2018-03-31T16:24:36Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.ValidLogin@62043840]" name="openApplication" is-config="true" duration-ms="17612" started-at="2018-03-31T17:25:36Z" finished-at="2018-03-31T17:25:53Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[firefox]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.0.0.2]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@54a097cc]" name="testValidLogin" duration-ms="4729" started-at="2018-03-31T16:24:36Z" finished-at="2018-03-31T16:24:41Z">
+        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@62043840]" name="testValidLogin" duration-ms="8848" started-at="2018-03-31T17:25:53Z" finished-at="2018-03-31T17:26:02Z">
           <reporter-output>
             <line>
               <![CDATA[Expected Page actiTIME - Login is Displayed]]>
@@ -301,11 +180,11 @@ at java.lang.Thread.run(Unknown Source)
             </line>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@54a097cc]" name="closeApplication" is-config="true" duration-ms="4169" started-at="2018-03-31T16:24:41Z" finished-at="2018-03-31T16:24:45Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@62043840]" name="closeApplication" is-config="true" duration-ms="1598" started-at="2018-03-31T17:26:02Z" finished-at="2018-03-31T17:26:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@54a097cc] output=Expected Page actiTIME - Login is Displayed]]]>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@62043840] output=Expected Page actiTIME - Login is Displayed]]]>
               </value>
             </param>
           </params>
