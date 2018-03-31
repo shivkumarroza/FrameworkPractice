@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="86.757" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="148.992" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_144\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="F:\Java_Practice\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf9126727769608365272.tmp"/>
+    <property name="classworlds.conf" value="F:\Java_Practice\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5594483166832263843.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\oracle\product\10.2.0\db_1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Android-sdk\platform-tools;C:\Program Files\Android-sdk\tools;C:\Program Files\Android-sdk\tools\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Windows\System32\cmd.exe;G:\Selenium\Jenkins setup\apache-tomcat-7.0.85-windows-x64\apache-tomcat-7.0.85\bin;C:\Users\Wooplr\Desktop\node;G:\Selenium\Jenkins setup\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;C:\Program Files\Android-sdk\platforms;C:\Users\Wooplr\AppData\Local\Microsoft\WindowsApps;C:\Users\Wooplr\AppData\Roaming\npm;;G:\Q Spiders\Qspider Softwares\eclipse\eclipse-java-oxygen-1a-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,6 +60,44 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testInvalidLogin" classname="script.InvalidLogin" time="5.539"/>
-  <testcase name="testValidLogin" classname="script.ValidLogin" time="8.584"/>
+  <testcase name="testValidLogin" classname="script.ValidLogin" time="7.484"/>
+  <testcase name="testValidLogin" classname="script.ValidLogin" time="4.729"/>
+  <testcase name="testInvalidLogin" classname="script.InvalidLogin" time="2.827"/>
+  <testcase name="testInvalidLogin" classname="script.InvalidLogin" time="7.926"/>
+  <testcase name="testCheckVersion" classname="script.CheckVersion" time="6.895"/>
+  <testcase name="testCheckVersion" classname="script.CheckVersion" time="3.381">
+    <failure message="Element &lt;div class=&quot;popup_menu_label&quot;&gt; is not clickable at point (1259.5,70.10000610351562) because another element &lt;div id=&quot;preInsertedTransformedMoireId&quot; class=&quot;transformedMoireClass&quot;&gt; obscures it&#10;Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;&#10;System info: host: &apos;DESKTOP-2IEME8E&apos;, ip: &apos;10.0.0.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6536, moz:profile: C:\Users\Wooplr\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+Element <div class="popup_menu_label"> is not clickable at point (1259.5,70.10000610351562) because another element <div id="preInsertedTransformedMoireId" class="transformedMoireClass"> obscures it
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-2IEME8E', ip: '10.0.0.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 6536, moz:profile: C:\Users\Wooplr\AppData\Loc..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: aeae08b0-06ef-4b76-8662-bec2e246ba85
+	at script.CheckVersion.testCheckVersion(CheckVersion.java:28)
+]]></failure>
+    <system-out><![CDATA[Expected Page actiTIME - Login is Displayed
+Expected Page actiTIME - Enter Time-Track is Displayed
+]]></system-out>
+    <system-err><![CDATA[Unable to read VR Path Registry from C:\Users\Wooplr\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 9992, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Wooplr\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3048, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3048, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\Wooplr\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3416, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522513507527	geckodriver::marionette	ERROR	Failed to stop browser process
+1522513508733	geckodriver	INFO	geckodriver 0.20.0 (0ac3698a74a7b1a742682b8e704f1f418df827ed 2018-03-13)
+1522513508824	geckodriver	INFO	Listening on 127.0.0.1:35837
+1522513509317	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\Wooplr\\AppData\\Local\\Temp\\rust_mozprofile.iKeezYOpqDSK"
+1522513511989	Marionette	INFO	Enabled via --marionette
+1522513517412	Marionette	INFO	Listening on port 9774
+1522513517669	Marionette	WARN	TLS certificate errors will be ignored for this session
+Mar 31, 2018 9:55:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

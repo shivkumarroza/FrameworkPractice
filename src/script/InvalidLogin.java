@@ -7,7 +7,7 @@ import generic.Excel;
 import page.LoginPage;
 
 public class InvalidLogin extends BaseTest {
-	@Test
+	@Test(priority=2)
 	public void testInvalidLogin()
 	{
 		String loginPageTitle=Excel.getData(XL_PATH, "InvalidLogin", 1, 0);

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]">
-  <test thread-count="5" verbose="0" name="Test(failed)">
+<suite verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="TestFirefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="script.ValidLogin">
+      <class name="script.CheckVersion">
         <methods>
-          <include name="testValidLogin"/>
+          <include name="testCheckVersion"/>
           <include name="closeApplication"/>
           <include name="openApplication"/>
         </methods>
-      </class> <!-- script.ValidLogin -->
+      </class> <!-- script.CheckVersion -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestFirefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

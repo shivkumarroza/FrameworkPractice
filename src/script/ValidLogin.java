@@ -8,7 +8,7 @@ import page.LoginPage;
 
 public class ValidLogin extends BaseTest {
 	
-	@Test
+	@Test(priority=1)
 	public void testValidLogin()
 	{
 		String loginPageTitle=Excel.getData(XL_PATH, "ValidLogin", 1, 0);

@@ -4,35 +4,47 @@
     <line>
       <![CDATA[Expected Page actiTIME - Login is Displayed]]>
     </line>
+    <line>
+      <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Pass : Expected Version actiTIME 2017.4 is Displayed]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51291" started-at="2018-03-31T15:05:32Z" finished-at="2018-03-31T15:06:24Z">
+  <suite name="Default suite" duration-ms="17320" started-at="2018-03-31T16:14:54Z" finished-at="2018-03-31T16:15:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51291" started-at="2018-03-31T15:05:32Z" finished-at="2018-03-31T15:06:24Z">
-      <class name="script.InvalidLogin">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.InvalidLogin@5e3a8624]" name="openApplication" is-config="true" duration-ms="43331" started-at="2018-03-31T15:05:33Z" finished-at="2018-03-31T15:06:16Z">
+    <test name="Default test" duration-ms="17320" started-at="2018-03-31T16:14:54Z" finished-at="2018-03-31T16:15:11Z">
+      <class name="script.CheckVersion">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.CheckVersion@5e3a8624]" name="openApplication" is-config="true" duration-ms="8390" started-at="2018-03-31T16:14:54Z" finished-at="2018-03-31T16:15:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:0, instance:script.InvalidLogin@5e3a8624]" name="testInvalidLogin" duration-ms="6870" started-at="2018-03-31T15:06:16Z" finished-at="2018-03-31T15:06:23Z">
+        <test-method status="PASS" signature="testCheckVersion()[pri:0, instance:script.CheckVersion@5e3a8624]" name="testCheckVersion" duration-ms="6575" started-at="2018-03-31T16:15:02Z" finished-at="2018-03-31T16:15:09Z">
           <reporter-output>
             <line>
               <![CDATA[Expected Page actiTIME - Login is Displayed]]>
             </line>
+            <line>
+              <![CDATA[Expected Page actiTIME - Enter Time-Track is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Pass : Expected Version actiTIME 2017.4 is Displayed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@5e3a8624]" name="closeApplication" is-config="true" duration-ms="951" started-at="2018-03-31T15:06:23Z" finished-at="2018-03-31T15:06:24Z">
+        </test-method> <!-- testCheckVersion -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckVersion@5e3a8624]" name="closeApplication" is-config="true" duration-ms="2320" started-at="2018-03-31T16:15:09Z" finished-at="2018-03-31T16:15:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:0, instance:script.InvalidLogin@5e3a8624] output=Expected Page actiTIME - Login is Displayed]]]>
+                <![CDATA[[TestResult name=testCheckVersion status=SUCCESS method=CheckVersion.testCheckVersion()[pri:0, instance:script.CheckVersion@5e3a8624] output=Expected Page actiTIME - Login is Displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- script.InvalidLogin -->
+      </class> <!-- script.CheckVersion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
